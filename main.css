@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(228, 20%, 25%);
+  font-family: Candara;
+  color: #098ce4;
+  margin: 0;
+  padding: 10px 50px 50px 50px;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+header h1 {
+  font-size: 5rem;
+  user-select: none;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+#logoimg {
+  padding-right: 10px;
+  pointer-events: none;
+  user-select: none;
+  max-width: 20%;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.menu {
+  background-color: #098ce4;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-size: 23px;
+  font-weight: 900;
+  margin-right: 40px;
+  display: block;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: #098ce4;
+
+}
+
+.coluna-esquerda {
+  float: left;
+  width: 75%;
+}
+
+.coluna-direita {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.lastCard{
+margin-bottom: 120px;
+
+}
+#promocao-banner {
+  height: 1254px;
+  background-image: url("imagens/The\ best\ outlet.png");
+  background-size: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  position: relative;
+  text-shadow: 0 0 4px #fff;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+#promocao-banner1 {
+  height: 2360px;
+  background-image: url("imagens/logo-nike.jpg");
+  background-size: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  position: relative;
+  text-shadow: 0 0 4px #fff;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+#promocao-banner2 {
+  height: 2358px;
+  background-image: url("imagens/logo-adidas.jpg");
+  background-size: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  position: relative;
+  text-shadow: 0 0 4px #fff;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+#promocao-banner:hover {
+  box-shadow: 10px 10px 16px #888888;
+}
+
+
+#promocao-banner2:hover {
+  box-shadow: 10px 10px 16px #888888;
+}
+
+#promocao-banner1:hover {
+  box-shadow: 10px 10px 16px #888888;
+}
+#promocao-h2 {
+  position: absolute;
+  bottom: 26px;
+  right: 26px;
+}
+
+.sobreimg {
+  height: 75px;
+  border-radius: 50%;
+  margin: 10px;
+  box-shadow: 0px 0px 5px #888888;
+  cursor: pointer;
+}
+
+.sobreimg:hover {
+  box-shadow: 5px 10px 10px #888888;
+  transition: box-shadow 0.3s;
+}
+
+.sobreitens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sobretexto a {
+  color: #098ce4;
+}
+
+.promo {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0.85rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3;
+}
+
+.promo:hover {
+  box-shadow: 0px 0px 20px #888888;
+}
+
+.promo img {
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 13px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social img {
+  margin: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.social img:hover {
+  opacity: 0.7;
+}
+
+.produto img {
+  height: 290px;
+  margin-top: 10px;
+}
+
+.produto {
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: box-shadow 0.25s;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.tituloproduto {
+  font-weight: bold;
+}
+
+.produto p {
+  margin: 0;
+}
+
+.produto:hover {
+  box-shadow: 5px 10px 15px #888888;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.minigrid {
+  height: 420px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.precoproduto1 {
+  text-decoration: line-through;
+}
+
+.precoproduto1 {
+  width: 500;
+}
+
+#entrega {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  height: 100px;
+  width: 300px;
+}
+
+#entrega img {
+  position: absolute;
+  right: 45px;
+  width: 105px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fone {
+  position: absolute;
+  height: 60px;
+  background-color: #ffffff;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  left: 16px;
+  border-radius: 0px;
+  opacity: 0;
+}
+#entrega img:hover + #fone {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card h1 {
+  color: #11161b;
+  text-decoration: underline;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+}
+
+@media screen and  (max-width: 600px) {
+  .coluna-esquerda {
+    width: 100%;
+  }
+  
+  .coluna-direita {
+    width: 100%;
+    padding:0;
+  }
+  #logoimg {
+    padding-right: 10px;
+    pointer-events: none;
+    user-select: none;
+    max-width: 100%;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  #promocao-banner {
+    height: 230px;
+  }
+  #promocao-banner2 {
+    height: 378px;
+  }
+  #promocao-banner1 {
+    height: 260px;
+  }
+}
+@media screen and  (max-width: 450px) {
+body {
+  padding: 5px 25px 25px 25px;
+}
+.menu {
+  display: block;
+  width: 100%;
+}
+
+.produto {
+  text-align: center;
+  display: grid;
+  font-size: 13px;
+}
+#promocao-banner {
+  height: 170px;
+}
+#promocao-banner2 {
+  height: 280px;
+}
+#promocao-banner1 {
+  height: 188px;
+}
+
+}
+
+.card {
+  padding: 10px;
+}
+
+.menu1 {
+  width: 100%;
+}
+
+.coluna-esquerda1{
+  width: 100%;
+}
